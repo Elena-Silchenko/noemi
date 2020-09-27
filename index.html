@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,
+		wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;
+		1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,
+		wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;
+		1,500;1,600;1,700&family=Mrs+Sheppards&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css" />
+	<link href="./css/font-awesome.css" rel="stylesheet" />	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="./app.js" defer></script>
+	<title>Noemi</title>
+</head>
+<body>
+	<!-- Main container -->
+	<div id="top" style="background: #fff; padding: 1em 2em;">
+		<!-- Header container -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+			<div class="d-block d-lg-none m-auto" style="font-size: .5em;">
+				<div class="logo-container-title mb-0">NOEMI</div>
+				<div style="
+					border-bottom: 0.21em solid #b59f5b;
+					width: 5em;
+					margin: auto;">
+				</div>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+      		<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">Features</a>
+					</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">Posttypes</a>
+					</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">Pages</a>
+					</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">Categories</a>
+					</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+
+				<div class="my-2 my-lg-0">
+					<a href><i class="fab fa-twitter" style="margin-right: 0.5em"></i></a>
+					<a href><i class="fab fa-facebook-f" style="margin-right: 0.5em"></i></a>
+					<a href><i class="fab fa-linkedin-in" style="margin-right: 0.5em"></i></a>
+					<a href><i class="fab fa-instagram" style="margin-right: 0.5em"></i></a>
+					<a href><i class="fab fa-google-plus" style="margin-right: 0.5em"></i></a>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Logo container -->
+		<div class="d-flex-column d-none d-lg-flex" style="margin-bottom: 2em;">
+			<div class="logo-container-title">NOEMI</div>
+			<div style="
+    		border-bottom: 0.21em solid #b59f5b;
+				width: 5em;
+				margin: auto;">
+			</div>
+		</div>
+
+		<!-- Featured Posts container -->
+		<div class="featured-post-container">
+			<div class="featured-post-box">
+				<div class="featured-post-image-container">
+					<img src="./images/features-post-1.png"/>
+				</div>
+				<div class="featured-post-frame">
+					<h3>BEAUTY HEALTH LIFESTYLE</h3>
+					<h2>
+						<a href style="color: #fff;">
+							FROM GRAPEFRUIT TO LEMONS TO ORANGES, CITRUS DOES YOU GOOD!
+						</a>
+					</h2>
+					<div class="d-flex">
+						<div class="featured-post-frame-date">Date</div>
+						<div class="flex-grow"></div>
+						<div class="d-flex-align featured-post-frame-counter">
+							<a href><i class="fas fa-comment icon"></i></a>
+							Counter
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="featured-post-box">
+				<div class="featured-post-image-container">
+					<img src="./images/features-post-2.png"/>
+				</div>
+				<div class="featured-post-frame">
+					<h3 class="featured-post-frame-category">HEALTH</h3>
+					<h2 class="featured-post-frame-title">
+						<a href style="color: #fff;">
+							5 TIPS TO SUPERCHARGE YOUR MOTIVATION
+						</a>
+					</h2>
+					<div class="d-flex">
+						<div class="featured-post-frame-date">Date</div>
+						<div class="flex-grow"></div>
+						<div class="d-flex-align featured-post-frame-counter">
+							<a href><i class="fas fa-comment icon"></i></a>
+							Counter
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="featured-post-box">
+				<div class="featured-post-image-container">
+					<img src="./images/features-post-3.png"/>
+				</div>
+				<div class="featured-post-frame">
+					<h3 class="featured-post-frame-category">BEAUTY</h3>
+					<h2 class="featured-post-frame-title">
+						<a href style="color: #fff;">
+							TO KEEP MAKEUP LOOKING FRESH TAKE A POWDER
+						</a>
+					</h2>
+					<div class="d-flex">
+						<div class="featured-post-frame-date">Date</div>
+						<div class="flex-grow"></div>
+						<div class="d-flex-align featured-post-frame-counter">
+							<a href><i class="fas fa-comment icon"></i></a>
+							Counter
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: flex;">	
+			<!-- Main2 container -->
+			<div class="container d-flex flex-column flex-lg-row" style="margin: 0 auto 2em;">
+				<!-- Content container -->
+				<div class="content-container m-auto mr-lg-4">
+					<!-- box 1 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.1.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- box 2 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.2.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- box 3 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.3.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- box 4 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.4.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- box 5 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.5.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- box 6 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.6.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- box 7 -->
+					<div class="content-box">
+						<div class="d-flex content-box-main">
+							<div class="content-box-image">
+								<img src="./images/main-container-2.7.png"/>
+							</div>
+							<div>
+								<div class="content-box-frame">
+									<h3 class="content-box-category">ART HEALTH</h3>
+									<h2 class="content-box-title">BARBECUE PARTY TIPS FOR A TRULY AMAZING EVENT</h2>
+									<div class="d-flex">
+										<div class="content-box-date">Date</div>
+										<div class="content-box-author">by Author</div>
+									</div>
+								</div>
+								<div>
+									<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+										when an unknown printer took ... 							
+									</p>
+									<div class="content-box-dots"><a href>...</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex content-box-statistics">
+							<div class="flex-grow"></div>
+							<div class="d-flex content-box-statistics-comments">
+								<div class="d-flex">
+									<a href><i class="far fa-comment"></i></a>
+									Counter
+								</div>
+								<div class="flex-grow"></div>
+								<div class="content-box-statistics-social-share">Share</div>
+								<div class="content-box-statistics-social-links">
+									<a href><i class="fab fa-twitter"></i></a>
+									<a href><i class="fab fa-pinterest"></i></a>
+									<a href><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sidebar container --> 
+				<div class="m-auto m-lg-0" style="width: 15em; min-width: 15em; max-width: 15em;">
+
+					<!-- About me container --> 
+					<div style="
+						margin-bottom: 2em;
+						display: flex;
+						flex-direction: column;
+						align-items: center;">
+						<div class="image-round sidebar-image">
+							<img src="./images/about.png" />
+						</div>
+						<div style="  
+							border: 3px solid rgba(181, 159, 91, 31);
+							color: #000; 
+							text-align: center;
+							padding: 5em 3em 1em;
+							margin-top: -4em;">
+							<h4>ABOUT ME</h4>
+							<div style="margin-bottom: 1em; font-style: italic; font-weight: 300;">Hi! Dummy text of the printing and typesetting industry. 
+								Lorem Ipsum has been the industry's standard dummy text ever 
+							</div>
+							<div class="about-me-font" style="color: #b59f5b; margin-bottom: 1em;"><a href style="color: #b59f5b;">follow me on</a></div>
+							<div>
+								<a href style="margin-right: 0.5em"><i class="fab fa-twitter"></i></a>
+								<a href style="margin-right: 0.5em"><i class="fab fa-facebook-f"></i></a>
+								<a href style="margin-right: 0.5em"><i class="fab fa-linkedin-in"></i></a>
+								<a href style="margin-right: 0.5em"><i class="fab fa-instagram"></i></a>
+								<a href style="margin-right: 0.5em"><i class="fab fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Email container -->
+					<div style="margin-bottom: 2em;"> 
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>NEWSLETTER</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div style="margin-bottom: 1em;">
+							<input class="email" type="email" name="email" id="email_input" placeholder="Your email address" style="
+							background: #f4f7f6;
+							width: 100%;
+							height: 3em;
+							padding-left: 1.5em;">
+						</div>
+						<div>
+							<button style="
+								background: #b59f5b; 
+								color: #fff; 
+								border: none;
+								width: 100%;
+								height: 3em;
+								cursor: pointer;
+								font-weight: 600;
+    						font-size: 0.8em;">
+								SUBSCRIBE
+							</button>
+						</div>
+					</div>
+
+					<!-- Follow Instagram container -->
+					<div style="margin-bottom: 2em;">
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>FOLLOW OUR INSTAGRAM</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div>
+							<div class="photo-gallery square-images">
+								<div class="square-image">
+									<img src="./images/main-container-2.2.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/main-container-2.3.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/features-post-3.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/sidebar-inst-4.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/sidebar-inst-5.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/sidebar-inst-6.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/sidebar-inst-7.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/sidebar-inst-8.png" />
+								</div>
+								<div class="square-image">
+									<img src="./images/sidebar-inst-9.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Categories container -->
+					<div style="margin-bottom: 2em;">
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>CATEGORIES</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div>
+							<div class="categories-title">
+								<div> 
+									<a href>Beauty</a>
+								</div>
+								<div style="font-size: .8em; color: #b59f5b;">
+									<sup>12</sup>
+								</div>
+							</div>
+							<div class="categories-title">
+								<div> 
+									<a href>Health</a>
+								</div>
+								<div style="font-size: .8em; color: #b59f5b;">
+									<sup>4</sup>
+								</div>
+							</div>
+							<div class="categories-title">
+								<div> 
+									<a href>Lifestyle</a>
+								</div>
+								<div style="font-size: .8em; color: #b59f5b;">
+									<sup>145</sup>
+								</div>
+							</div>
+							<div class="categories-title">
+								<div> 
+									<a href>Music</a>
+								</div>
+								<div style="font-size: .8em; color: #b59f5b;">
+									<sup>28</sup>
+								</div>
+							</div>
+							<div class="categories-title">
+								<div> 
+									<a href>Sport</a>
+								</div>
+								<div style="font-size: .8em; color: #b59f5b;">
+									<sup>62</sup>
+								</div>
+							</div>
+							<div class="categories-title">
+								<div> 
+									<a href>Yoga</a>
+								</div>
+								<div style="font-size: .8em; color: #b59f5b;">
+									<sup>8</sup>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Recent Posts container -->
+					<div class="recent-posts-container" style="margin-bottom: 2em;">
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>RECENT POSTS</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div class="recent-posts square-images">
+							<div class="recent-post">
+								<div class="recent-post-image square-image">
+									<img src="./images/sidebar-recent-posts1.png" />
+								</div>
+								<div style="flex-grow: 1;">
+									<div class="recent-post-date">June 14, 2015</div>
+									<div class="recent-post-title">LOREM IPSUM RIGHT NOW.</div>
+								</div>
+							</div>
+
+							<div class="recent-post">
+								<div class="recent-post-image square-image">
+									<img src="./images/sidebar-recent-posts2.png" />
+								</div>
+								<div style="flex-grow: 1;">
+									<div class="recent-post-date">June 14, 2015</div>
+									<div class="recent-post-title">LOREM IPSUM DOLOR AVAILABLE.</div>
+								</div>
+							</div>
+
+							<div class="recent-post">
+								<div class="recent-post-image square-image">
+									<img src="./images/sidebar-recent-posts3.png" />
+								</div>
+								<div style="flex-grow: 1;">
+									<div class="recent-post-date">June 14, 2015</div>
+									<div class="recent-post-title"">LOREM IPSUM AVAILABLE RIGHT NOW.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Search container -->
+					<div style="position: relative; margin-bottom: 2em;">
+						<form action="action_page.php">
+							<input class="search" type="text" placeholder="Search.." name="search" style="
+								padding: 1em;
+								font-size: 0.9em;
+								background: #f4f7f6;
+								outline: none;
+								width: 100%;
+								box-sizing: border-box;">
+							<button type="submit" style="
+									width: 3em;
+									padding: 1em;
+									background: #b59f5b;
+									color: white;
+									font-size: 1em;
+									cursor: pointer;
+									border: none;
+									position: absolute;
+									top: 0;
+									right: 0;
+									bottom: 0;">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+
+					<!-- Banner container -->
+					<div style="margin-bottom: 2em;">
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>BANNER</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div>
+							<img src="./images/banner2.png" style="width: 100%;" />
+						</div>
+					</div>
+
+					<!-- Facebook container -->
+					<div style="margin-bottom: 2em;">
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>FIND US ON FACEBOOK</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div>
+							<img src="./images/sidebar-fb.png" style="width: 100%;" />
+						</div>
+					</div>
+
+					<!-- Tags container -->
+					<div style="font-size: 0.8em;">
+						<div class="d-flex-column" style="margin-bottom: 1em;">
+							<h4>TAGS</h4>
+							<div style="
+								border-bottom: 0.15em solid #b59f5b;
+								width: 3em;
+								margin: auto;">
+							</div>
+						</div>
+						<div>
+							<span class="tags">FASHION</span>
+							<span class="tags">MUSIC</span>
+							<span class="tags">LOREM TAG</span>
+							<span class="tags">TAG</span>
+							<span class="tags">IPSUM TAG</span>
+							<span class="tags">TRAVEL</span>
+						</div>
+					</div>
+
+				</div> 
+			</div>
+		</div>
+
+		<!-- Follow container -->
+		<div style="display: flex; flex-direction: column; margin-bottom: 2em;">
+			<h4>FOLLOW OUR INSTAGRAM</h4>
+			<div style="
+				margin: auto; 
+				display: flex;
+    		align-items: center;
+    		line-height: 1em;">
+				<div>
+					<i class="fab fa-instagram" style="margin-right: 0.5em; color: #b59f5b;"></i>
+				</div>
+				<div class="follow-container-title"><a href style="color: #b59f5b;">instagram</a></div>
+			</div>
+		</div>
+
+		<!-- Gallery container -->
+		<div class="bottom-photo-gallery-animated">
+			<div>
+				<img src="./images/gallery-container-1.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-2.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-3.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-4.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-5.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-6.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-7.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-7.png" />
+			</div>
+			<div>
+				<img src="./images/gallery-container-7.png" />
+			</div>
+		</div>
+
+		<!-- Gallery container -->
+		<!-- <div class="bottom-photo-gallery">
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-1.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-2.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-3.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-4.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-5.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-6.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-7.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-7.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="./images/gallery-container-7.png" />
+				</div>
+				<div class="space"></div>
+			</div>
+		</div> -->
+
+		<!-- Footer container -->
+		<div id="bottom" style="display: flex; flex-direction: column;">
+			<div style="display: flex; background: #f4f7f6; margin-bottom: 2em; padding: 1em 0;">
+				<div style="margin: 0 auto; ">
+					<a href><i class="fab fa-twitter" style="margin-right: 2em;"></i></a>
+					<a href><i class="fab fa-pinterest" style="margin-right: 2em;"></i></a>
+					<a href><i class="fab fa-facebook-f" style="margin-right: 2em"></i></a>
+					<a href><i class="fab fa-google-plus" style="margin-right: 2em"></i></a>
+					<a href><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+
+			<div style="display: flex; flex-direction: column; align-items: center;">
+				<div class="footer-item on-top123"><a href="#top">on top</a></div>
+				<div style="margin: auto;">&copy;</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
